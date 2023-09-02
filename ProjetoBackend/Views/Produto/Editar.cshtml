@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Editar produto";
+}
+
+<div class="text-center my-4">
+
+    <h1 class="dislay-4">Editar produto</h1>
+</div>
+
+<form>
+    <div class="mb-3">
+        <label for="Produto">Produto</label>
+        <input type="text" class="form-control" placeholder="Digite o nome do produto">
+    </div>
+    <div class="mb-3">
+        <label for="Categoria">Categoria</label>
+        <input type="text" class="form-control" placeholder="Digite a categoria do produto">
+    </div>
+    <div class="mb-3">
+        <label for="Preco">Preço Unitário</label>
+        <input type="text" class="form-control" placeholder="Digite o preço unitário do produto">
+    </div>
+    <button type="submit" class="btn btn-primary">Editar</button>
+    <a class="btn btn-secondary" asp-controller="Produto" asp-action="Index" role="button">Voltar</a>
+</form>
